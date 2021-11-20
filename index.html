@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <title>Classical Music Player</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="javascript.js"></script>
+</head>
+
+
+<body>
+  <div class="container" id="drum-machine">
+    <h1 class="text-center">Classical Music Player</h1>
+    <div class="card my-3">
+      <div class="card-body">
+        <div class="text-center" id="display">Click a button or press a key to start playing music</div>
+      </div>
+    </div>
+    <div class="align-items-center text-center">
+      <img class="col-3" src="pachelbel.jpeg" alt="pachelbel">
+      <img class="col-3" src="mozart.jpeg" alt="mozart">
+      <img class="col-3" src="handel.jpeg" alt="handel">
+    </div>
+    <br />
+
+    <div class="align-items-center text-center">
+      <button class="drum-pad btn col-3 btn-dark" id="drum-0" onclick="play('Q')">
+        Q
+        <audio src="pachelbel-canonindmajor.mp3" class="clip" id="Q">
+      </button>
+      <button class="drum-pad btn col-3 btn-dark" id="drum-1" onclick="play('W')">
+        W
+        <audio src="mozart-overturetothemarriageoffigarok492.mp3" class="clip" id="W">
+      </button>
+      <button class="drum-pad btn col-3 btn-dark" id="drum-2" onclick="play('E')">
+        E
+        <audio src="handel-hallelujah.mp3" class="clip" id="E">
+      </button>
+    </div>
+    <br>
+    <div class="align-items-center text-center">
+      <img class="col-3" src="vivaldi.jpeg" alt="pachelbel">
+      <img class="col-3" src="bach.jpeg" alt="mozart">
+      <img class="col-3" src="danielveesey.jpeg" alt="handel">
+    </div>
+    <br />
+    <div class="text-center">
+      <button class="drum-pad btn col-3 btn-dark" id="drum-3" onclick="play('A')">
+        A
+        <audio src="vivaldi-concertoformandolinandstringsindrv425.mp3" class="clip" id="A">
+      </button>
+      <button class="drum-pad btn col-3 btn-dark" id="drum-4" onclick="play('S')">
+        S
+        <audio src="bach-ariavariatabwv989variationno1.mp3" class="clip" id="S">
+      </button>
+      <button class="drum-pad btn col-3 btn-dark" id="drum-5" onclick="play('D')">
+        D
+        <audio src="danielveesey-sonatano1infminorop2no1ivprestissimo.mp3" class="clip" id="D">
+      </button>
+    </div>
+    <br>
+    <div class="align-items-center text-center">
+      <img class="col-3" src="schubert.jpeg" alt="pachelbel">
+      <img class="col-3" src="liszt.jpeg" alt="mozart">
+      <img class="col-3" src="monteverdi.jpeg" alt="handel">
+    </div>
+    <br />
+    <div class="text-center">
+      <button class="drum-pad btn col-3 btn-dark" id="drum-6" onclick="play('Z')">
+        Z
+        <audio src="schubert-avemaria.mp3" class="clip" id="Z">
+      </button>
+      <button class="drum-pad btn col-3 btn-dark" id="drum-7" onclick="play('X')">
+        X
+        <audio src="liszt-hungarianrhapsodyno2s2442.mp3" class="clip" id="X">
+      </button>
+      <button class="drum-pad btn col-3 btn-dark" id="drum-8" onclick="play('C')">
+        C
+        <audio src="monteverdi-toccatafromlorfeo.mp3" class="clip" id="C">
+      </button>
+    </div>
+    <br />
+  </div>
+
+</body>
+
+</html>
